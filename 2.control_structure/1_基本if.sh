@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # 最基本的是if-then,格式如下:
 # if command

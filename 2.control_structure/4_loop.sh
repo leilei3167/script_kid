@@ -84,16 +84,26 @@ for ((a = 1; a < 10; a++)); do
     echo ""
 done
 
-# 循环处理文件数据
+# # 循环处理文件数据
+# echo ""
+# echo "循环处理文件数据"
+# IFS_OLD=$IFS
+# IFS=$'\n'
+# for entry in $(cat /etc/passwd); do
+#     echo "Values in $entry –"
+#     IFS=: # 嵌套循环中改变IFS为:
+#     for value in $entry; do
+#         echo " $value"
+#     done
+# done
+# IFS=$IFS_OLD
+
 echo ""
-echo "循环处理文件数据"
-IFS_OLD=$IFS
-IFS=$'\n'
-for entry in $(cat /etc/passwd); do
-    echo "Values in $entry –"
-    IFS=: # 嵌套循环中改变IFS为:
-    for value in $entry; do
-        echo " $value"
+echo "read while"
+file="/etc/passwd"
+while read -r value; do
+    echo "Values in $value –"
+    for tmp in $value; do
+        echo "tmp:  $tmp"
     done
-done
-IFS=$IFS_OLD
+done <"$file"

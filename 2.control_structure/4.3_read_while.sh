@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # read命令会自动读取文本文件的下一行,当文件读取完毕时read命令会返回false
 # read根据IFS来分隔文本行,默认IFS是空格和tab

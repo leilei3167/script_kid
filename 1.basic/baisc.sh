@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 echo -n "the time is:"
 date
 echo "helle you're in test1.sh"
