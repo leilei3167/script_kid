@@ -30,7 +30,7 @@ echo
 function db2 {
     read -r -p "Enter a value: " value
     echo $((value * 2))
-    # echo "djsajdsa" 会作为输出传递
+    # echo "djsajdsa" 也会作为输出传递
 }
 result=$(db2)
 echo "The new value is $result"
