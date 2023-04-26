@@ -1,0 +1,1 @@
+{print $1 " 's home dir is " $6}
