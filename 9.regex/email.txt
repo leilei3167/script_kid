@@ -1,0 +1,19 @@
+这是10个合法的电子邮件地址：
+example@example.com
+firstname.lastname@example.co.uk
+email+alias@example.com
+firstname.o'lastname@example.com
+email@[123.123.123.123]
+user.name+tag+sorting@example.com
+example-indeed@strange-example.com
+example@s.example
+example@subdomain.example.com
+firstname-lastname@example.com
+
+这是5个不合法的电子邮件地址：
+Abc.example.com
+A@b@c@example.com
+just"not"right@example.com
+this\ is"really"not\allowed@example.com
+example@-example.com
+
