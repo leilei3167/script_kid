@@ -1,0 +1,13 @@
+# MySQL
+mysql:
+  host: ${MYSQL_HOST}
+  port: ${MYSQL_PORT}
+
+# Redis
+redis:
+  host: ${REDIS_HOST}
+  port: ${REDIS_PORT}
+
+# Secret
+server:
+  key: ${SERVER_KEY}
